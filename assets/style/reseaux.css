@@ -25,17 +25,26 @@
 }
 
 i {
-  font-size: 5em;
+  font-size: 6.5em;
+  transition: all 0.2s ease;
+}
+
+li:hover i {
+  filter: brightness(0.8);
 }
 
 li:nth-child(1) i {
-  color: green;
+  color: #1d63f0;
+}
+
+li:nth-child(2) i {
+  color: #0961b8;
 }
 
 li:nth-child(3) i {
-  color: rgb(34, 84, 221);
+  color: #5cee56;
 }
 
 li:nth-child(4) i {
-  color: rgb(34, 84, 221);
+  color: #03c100;
 }
