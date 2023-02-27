@@ -1,8 +1,8 @@
-body{
-  background-color: rgb(255, 255, 255)
+body {
+  background: rgb(255, 255, 255) !important;
 }
 
-#contenu{
+#contenu {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -19,16 +19,14 @@ body{
   margin: 1px;
 }
 
-#contenu h2{
+#contenu h2 {
   text-align: center;
   margin: 16px 0;
   font-size: 3em;
 }
 
-
-#contenu h3{
+#contenu h3 {
   text-align: center;
   margin: 16px 0;
   font-size: 1em;
 }
-
