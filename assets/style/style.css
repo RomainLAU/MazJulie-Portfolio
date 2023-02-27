@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+#blocpage {
+    width: 60%;
+    margin: auto;
+    height: 75px;
+}
+
+#contenu {
+    min-height: calc(100vh - 75px);
+}
+
+.page-on {
+    text-transform: uppercase;
+}
+
+/* Header */
+
+html {
+    font-family: Poppins;
+}
+
+header {
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span {
+    color: rgb(166, 166, 166);
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li:hover {
+    border-bottom: 1px solid black;
+}

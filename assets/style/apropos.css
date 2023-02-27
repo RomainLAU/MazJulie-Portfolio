@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  text-align: center;
+  background-color: #e2e2e2;
+  background: url('../images/fond-écran.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#contenu {
+  display: flex;
+  flex-direction: column;
+  font-family: 'poppins', sans-serif;
+}
+
+#apropos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

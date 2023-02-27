@@ -1,0 +1,34 @@
+body{
+  background-color: rgb(255, 255, 255)
+}
+
+#contenu{
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e2e2e2;
+}
+
+#contenu section h3 + div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#contenu section h3 + div img {
+  margin: 1px;
+}
+
+#contenu h2{
+  text-align: center;
+  margin: 16px 0;
+  font-size: 3em;
+}
+
+
+#contenu h3{
+  text-align: center;
+  margin: 16px 0;
+  font-size: 1em;
+}
+

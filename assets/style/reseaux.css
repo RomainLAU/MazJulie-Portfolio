@@ -1,0 +1,46 @@
+body {
+  background: url('../images/fond-écran.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#contenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contenu ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#contenu li {
+  margin: 50px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+i {
+  font-size: 5em;
+}
+
+li:nth-child(1) i {
+  color: green;
+}
+
+li:nth-child(3) i {
+  color: rgb(34, 84, 221);
+}
+
+li:nth-child(4) i {
+  color: rgb(34, 84, 221);
+}
