@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: poppins, sans-serif;
   color: white;
 }
@@ -29,18 +29,17 @@
   border-radius: 50px;
   padding: 12px 48px;
   position: relative;
-  overflow: hidden;
   transition: all 0.2s ease-in-out;
 }
 
 #contenu a::before {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  right: -1px;
   background: white;
-  border-radius: 0.3em;
+  width: 101%;
+  height: 100%;
+  border-radius: 45px;
   content: '';
   mix-blend-mode: color-burn;
   transition: all 0.2s ease-in-out;
