@@ -1,5 +1,91 @@
 #contenu {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  row-gap: 1em;
+  padding: 4em 0;
+}
+
+.contenu__row {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+  width: 80vw;
+  height: 20em;
+  color: black;
+  text-decoration: none;
+}
+
+.contenu__row--picture {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contenu__row:nth-child(1) .contenu__row--picture {
+  background-image: url('../../projets/illu-photo.png');
+}
+
+.contenu__row:nth-child(2) .contenu__row--picture {
+  background-image: url('../../projets/Retouche-photo/Retouche-photo-3-1.jpg');
+  background-position-y: -100px;
+}
+
+.contenu__row:nth-child(3) .contenu__row--picture {
+  background-image: url('../../projets/FRNCH/Group 1.png');
+}
+
+.contenu__row:nth-child(4) .contenu__row--picture {
+  background-color: #fed4fe;
+  background-image: url('../../projets/Illustration/Bouquet-illustration.png');
+  background-position-y: -222px;
+  background-size: 98%;
+}
+
+.contenu__row:nth-child(5) .contenu__row--picture {
+  background-image: url('../../projets/Maquette et intégration/Maquette-integration-florilege.png');
+  background-size: 100%;
+  background-position: top;
+}
+
+.contenu__row:nth-child(6) .contenu__row--picture {
+  background-image: url('../../projets/Logo et carte de visite/Logo-florilege.png');
+  background-size: 25%;
+}
+
+.contenu__row:nth-child(7) .contenu__row--picture {
+  background-image: url('../images/konbini-logo.png');
+  background-size: 25%;
+}
+
+.contenu__row--name {
+  width: 20em;
+  max-width: 20em;
+  height: calc(20em - 4px);
+  max-height: 20em;
+  aspect-ratio: 1 / 1;
+  background-color: rgba(226, 226, 226, 0.507);
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.contenu__row--name span {
+  font-size: 24px;
+  white-space: break-spaces;
+  text-align: center;
+}
+
+.contenu__row:nth-child(even) .contenu__row--picture {
+  order: 2;
+}
+
+.contenu__row:nth-child(odd) .contenu__row--name {
+  order: 1;
 }
