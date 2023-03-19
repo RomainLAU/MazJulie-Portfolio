@@ -61,6 +61,10 @@ header {
   font-size: 24px;
 }
 
+.space-left {
+  margin-left: 356px;
+}
+
 .contenu__images {
   display: flex;
   align-items: center;
@@ -84,10 +88,6 @@ header {
   order: 1;
 }
 
-.contenu__images--large {
-  order: 2;
-}
-
 .contenu__images--third {
   order: 3;
 }
@@ -102,12 +102,24 @@ header {
   width: auto !important;
   height: 470px !important;
   object-fit: contain !important;
+  order: 2;
 }
 
 .contenu__images--medium {
   width: auto !important;
   height: 470px !important;
   object-fit: contain !important;
+}
+
+.column {
+  flex-direction: column;
+  row-gap: 4em;
+  margin-bottom: 4em;
+}
+
+.contenu__images--full {
+  width: 80vw !important;
+  height: 100% !important;
 }
 
 /* Autres articles */
