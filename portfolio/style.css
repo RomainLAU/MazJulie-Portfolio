@@ -62,7 +62,7 @@ header {
 }
 
 .space-left {
-  margin-left: 356px;
+  margin-left: 30vw;
 }
 
 .contenu__images {
@@ -71,6 +71,19 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2em;
+}
+
+.logos {
+  max-width: 80vw;
+  justify-content: center;
+}
+
+.logos img {
+  max-width: 80vw;
+}
+
+.cartes img {
+  width: 45%;
 }
 
 .contenu__soldes .contenu__images {
