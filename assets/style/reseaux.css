@@ -12,6 +12,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #contenu li {
@@ -23,6 +24,12 @@
   align-items: center;
   border-radius: 50px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  #contenu li {
+    margin: 10%;
+  }
 }
 
 img {

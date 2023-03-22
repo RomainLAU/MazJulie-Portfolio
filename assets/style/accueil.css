@@ -9,9 +9,9 @@
 }
 
 #contenu h1 {
-  font-weight: 400;
+  font-weight: 200;
   margin: 30px;
-  font-size: 3em;
+  font-size: clamp(2em, 4vw + 16px, 16em);
   color: white;
   margin-bottom: 90px;
 }

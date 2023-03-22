@@ -10,6 +10,12 @@ body {
   height: 75px;
 }
 
+@media screen and (max-width: 1000px) {
+  #blocpage {
+    width: 100%;
+  }
+}
+
 #contenu {
   min-height: calc(100vh - 75px);
 }
@@ -29,6 +35,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    justify-content: center;
+  }
 }
 
 header span {
@@ -51,6 +63,12 @@ nav {
   align-items: center;
   height: 28px;
   margin-top: 42px;
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    display: none;
+  }
 }
 
 nav ul {

@@ -3,20 +3,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   font-family: poppins, sans-serif;
   color: white;
+  text-align: center;
 }
 
 #contenu h1 {
-  font-weight: 300;
+  font-weight: 200;
   margin: 24px;
-  font-size: 4em;
+  font-size: clamp(2em, 4vw + 16px, 16em);
 }
 
 #contenu h3 {
-  font-weight: 500;
-  font-size: 2em;
+  font-weight: 300;
+  font-size: 1.4em;
+  font-size: clamp(0.8em, 1vw + 4px, 1.4em);
   margin-top: 0;
   margin-bottom: 90px;
 }
