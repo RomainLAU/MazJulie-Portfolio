@@ -17,6 +17,7 @@ body {
 
 #contenu section h3 + div img {
   margin: 1px;
+  object-fit: cover;
 }
 
 #contenu h2 {
