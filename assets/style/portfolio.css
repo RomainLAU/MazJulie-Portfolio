@@ -26,6 +26,28 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 1200px) {
+  .contenu__row {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #contenu {
+    justify-content: center;
+  }
+
+  .contenu__row {
+    height: auto;
+    column-gap: 0;
+    width: auto;
+  }
+
+  .contenu__row--picture {
+    display: none;
+  }
+}
+
 .contenu__row:nth-child(1) .contenu__row--picture {
   background-image: url('../../projets/illu-photo.png');
 }

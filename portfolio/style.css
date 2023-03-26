@@ -51,6 +51,18 @@ header {
   padding: 0 13em;
 }
 
+@media screen and (max-width: 1200px) {
+  .contenu__container {
+    padding: 0 5em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .contenu__container {
+    padding: 0 1em;
+  }
+}
+
 .container--small {
   width: 100%;
   align-items: center;
@@ -65,12 +77,25 @@ header {
   margin-left: 30vw;
 }
 
+@media screen and (max-width: 720px) {
+  .space-left {
+    margin-left: 10vw;
+  }
+}
+
 .contenu__images {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenu__images {
+    gap: 1em;
+    justify-content: center;
+  }
 }
 
 .logos {
@@ -95,14 +120,6 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-.contenu__images--first {
-  order: 1;
-}
-
-.contenu__images--third {
-  order: 3;
 }
 
 .contenu__images img {
@@ -133,6 +150,59 @@ header {
 .contenu__images--full {
   width: 80vw !important;
   height: 100% !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenu__images--first-row,
+  .contenu__images--second-row {
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+
+  .contenu__images--first {
+    order: 2;
+    max-width: 38vw;
+  }
+
+  .contenu__images--large {
+    order: 3;
+    height: auto;
+    max-width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .contenu__images--third,
+  .contenu__images--medium {
+    order: -1;
+    max-width: 48vw;
+  }
+
+  .contenu__images--first-row img,
+  .contenu__images--second-row img {
+    height: 400px !important;
+  }
+
+  .special-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    order: 1;
+  }
+
+  .special-row img {
+    object-fit: cover !important;
+    max-width: 31vw;
+  }
+
+  .contenu--full img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  .contenu--full .contenu__images--large {
+    order: -1;
+  }
 }
 
 iframe {
@@ -169,6 +239,19 @@ iframe {
   height: 120px;
   position: relative;
   display: block;
+}
+
+@media screen and (max-width: 720px) {
+  .other-articles {
+    width: 95%;
+    gap: 1em;
+  }
+
+  .article {
+    width: 100%;
+    overflow: hidden;
+    height: 10em;
+  }
 }
 
 .article img {
