@@ -120,6 +120,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  column-gap: 1em;
 }
 
 .contenu__images img {
@@ -150,6 +151,10 @@ header {
 .contenu__images--full {
   width: 80vw !important;
   height: 100% !important;
+}
+
+.contenu__images--third {
+  order: 3;
 }
 
 @media screen and (max-width: 1200px) {
