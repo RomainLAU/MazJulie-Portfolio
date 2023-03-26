@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 #blocpage {
   width: 60%;
   margin: auto;
@@ -13,6 +17,7 @@ body {
 @media screen and (max-width: 1000px) {
   #blocpage {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -35,6 +40,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 720px) {
@@ -65,8 +71,52 @@ nav {
   margin-top: 42px;
 }
 
+#burger-button {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: center;
+  float: right;
+}
+
+#dropdown-menu {
+  position: fixed;
+  inset: 75px 0 0 0;
+  display: none;
+  flex-direction: column;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease-in-out;
+  padding-top: 20%;
+  align-items: center;
+  row-gap: 2em;
+}
+
+#dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  text-align: center;
+}
+
+#dropdown-menu li a:hover {
+  font-weight: 800;
+}
+
 @media screen and (max-width: 720px) {
   nav {
+    display: none;
+  }
+
+  #burger-button {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #dropdown-menu {
     display: none;
   }
 }
