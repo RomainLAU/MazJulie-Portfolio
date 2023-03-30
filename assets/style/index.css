@@ -46,6 +46,12 @@
   transition: all 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 720px) {
+  #contenu a {
+    color: black;
+  }
+}
+
 #contenu a:hover {
   outline: none;
   color: black;
