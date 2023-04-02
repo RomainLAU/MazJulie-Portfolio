@@ -22,6 +22,7 @@
   background-size: cover;
   background-position: center;
   height: 20em;
+  max-width: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -38,8 +39,15 @@
   }
 
   .contenu__row {
-    height: auto;
+    height: 10em;
     column-gap: 1em;
+  }
+
+  .contenu__row--picture,
+  .contenu__row--name {
+    height: 10em !important;
+    max-height: 10em !important;
+    word-break: break-all;
   }
 
   .contenu__row--name {
