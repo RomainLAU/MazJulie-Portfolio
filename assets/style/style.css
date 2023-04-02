@@ -29,7 +29,7 @@ body {
 
 .page-on {
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 800 !important;
 }
 
 /* Header */
@@ -80,23 +80,43 @@ nav {
   height: 28px;
 }
 
-#burger-button {
-  display: none;
+#burger-button-open,
+#burger-button-close {
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
   cursor: pointer;
   background-position: center;
   float: right;
+  display: none;
+}
+
+#burger-button-open {
+  background-image: url('../images/burger.png');
+}
+
+#burger-button-close {
+  background-image: url('../images/cross.png');
+  align-self: flex-end;
+  margin-right: 10vw;
+  margin-top: 10vw;
+}
+
+#dropdown {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-image: url('../images/fond-écran.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  inset: 0;
+  z-index: 100;
 }
 
 #dropdown-menu {
-  position: fixed;
-  inset: 75px 0 0 0;
   display: none;
   flex-direction: column;
-  z-index: 100;
-  backdrop-filter: blur(10px);
   transition: all 0.2s ease-in-out;
   padding-top: 20%;
   align-items: center;
@@ -106,8 +126,9 @@ nav {
 #dropdown-menu li a {
   color: white;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
+  font-weight: 200;
 }
 
 #dropdown-menu li a:hover {
@@ -119,12 +140,15 @@ nav {
     display: none;
   }
 
-  #burger-button {
+  #burger-button-open {
     display: block;
   }
 }
 
 @media screen and (min-width: 720px) {
+  #burger-button-open,
+  #burger-button-close,
+  #dropdown,
   #dropdown-menu {
     display: none;
   }
@@ -161,7 +185,7 @@ nav li a {
 }
 
 nav li a:not(.page-on) {
-  font-weight: 600;
+  font-weight: 200;
 }
 
 nav li a:hover {
