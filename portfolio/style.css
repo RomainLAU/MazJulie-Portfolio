@@ -61,6 +61,12 @@ header {
   .contenu__container {
     padding: 0 1em;
   }
+
+  .tools {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1em;
+  }
 }
 
 .container--small {
