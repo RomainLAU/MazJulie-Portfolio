@@ -39,13 +39,25 @@
 
   .contenu__row {
     height: auto;
-    column-gap: 0;
-    width: auto;
+    column-gap: 1em;
   }
 
-  /* .contenu__row--picture {
-    display: none;
-  } */
+  .contenu__row--name {
+    width: 30% !important;
+  }
+
+  .contenu__row--name span {
+    font-size: 16px !important;
+  }
+
+  .contenu__row:nth-child(4) .contenu__row--picture {
+    background-position-y: 0 !important;
+    background-size: 100% !important;
+  }
+
+  .contenu__row:nth-child(2) .contenu__row--picture {
+    background-position-y: 0 !important;
+  }
 }
 
 .contenu__row:nth-child(1) .contenu__row--picture {
