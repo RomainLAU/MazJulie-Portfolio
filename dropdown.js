@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   burgerButtonOpen.style.backgroundImage = "url('./assets/images/burger.png')";
 
   burgerButtonOpen.addEventListener('click', () => {
-    body.classList.remove('no-scroll');
+    // body.classList.add('no-scroll');
     burgerButtonOpen.style.display = 'none';
     burgerButtonClose.style.display = 'block';
     dropdownMenu.style.display = 'flex';
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   burgerButtonClose.addEventListener('click', () => {
-    body.classList.add('no-scroll');
+    // body.classList.remove('no-scroll');
     dropdownMenu.style.display = 'none';
     burgerButtonClose.style.display = 'none';
     burgerButtonOpen.style.display = 'block';

@@ -6,7 +6,7 @@ body {
 }
 
 .no-scroll {
-  overflow: hidden;
+  /* overflow: auto; */
 }
 
 #blocpage {
@@ -105,12 +105,15 @@ nav {
 #dropdown {
   display: none;
   flex-direction: column;
-  align-items: center;
-  position: fixed;
+  /* align-items: center; */
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url('../images/fond-écran.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  inset: 0;
   z-index: 100;
 }
 
