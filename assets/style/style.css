@@ -17,7 +17,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   #blocpage {
-    width: max-content;
+    width: 100vw;
     height: auto;
     margin: 0;
   }
@@ -78,6 +78,7 @@ nav {
   display: flex;
   align-items: center;
   height: 28px;
+  margin-right: 5%;
 }
 
 #burger-button-open,
@@ -179,7 +180,7 @@ nav li {
 nav li a {
   text-align: center;
   display: flex;
-  width: 156px;
+  width: 90px;
   height: 28px;
   max-height: 28px;
   align-items: center;
@@ -193,4 +194,74 @@ nav li a:not(.page-on) {
 
 nav li a:hover {
   border-bottom: 1px solid black;
+}
+
+/* Autres articles */
+
+.possibilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4em;
+  margin: 4em 0;
+}
+
+.possibilities h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.other-articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  gap: 1em;
+}
+
+.article {
+  width: 320px;
+  height: 120px;
+  position: relative;
+  display: block;
+}
+
+@media screen and (max-width: 720px) {
+  .other-articles {
+    width: 95%;
+    gap: 1em;
+  }
+
+  .article {
+    width: 100%;
+    overflow: hidden;
+    height: 10em;
+  }
+}
+
+.article img {
+  width: 100%;
+  aspect-ratio: 10 / 4;
+  object-fit: scale-down;
+  filter: brightness(0.2);
+  transition: filter 200ms ease-in-out;
+  background-color: white;
+}
+
+.article:hover img {
+  filter: brightness(0.1);
+}
+
+.article span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  width: 60%;
+  line-height: 48px;
 }

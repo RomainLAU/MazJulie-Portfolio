@@ -43,9 +43,9 @@
     width: auto;
   }
 
-  .contenu__row--picture {
+  /* .contenu__row--picture {
     display: none;
-  }
+  } */
 }
 
 .contenu__row:nth-child(1) .contenu__row--picture {
